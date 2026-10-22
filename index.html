@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Praktikum 5 - JavaScript Dasar</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>Praktikum 5: JavaScript Dasar</h1>
+ <p id="pesan">Konten awal.</p>
+
+ <main class="grid">
+ <section><h2>Latihan 1 - Output</h2>
+  <button type="button" onclick="latihan1()">Tampilkan Hello World</button></section>
+
+ <section><h2>Latihan 2 - Alert dan prompt</h2>
+  <button type="button" onclick="latihan2()">Masukkan nama</button></section>
+
+ <section><h2>Latihan 3 - Operasi aritmetika (hasil di Console)</h2>
+  <button type="button" onclick="operasiDasar(9,4)">Jalankan 9 dan 4</button>
+  <button type="button" onclick="latihan3Prompt()">Input dari prompt</button></section>
+
+ <section><h2>Latihan 4 - if-else</h2>
+  <button type="button" onclick="latihan4()">Cek kelulusan</button></section>
+
+ <section><h2>Latihan 5 - switch</h2>
+  <button type="button" onclick="latihan5()">Angka 1-5</button></section>
+
+ <section><h2>Latihan 6 - Genap atau ganjil</h2>
+  <label for="bilangan">Masukkan bilangan bulat:</label>
+  <input type="number" id="bilangan" step="1">
+  <button type="button" onclick="cekBilangan()">Periksa</button>
+  <p id="hasilBilangan"></p></section>
+
+ <section><h2>Latihan 7 - Warna latar</h2>
+  <button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
+  <button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button>
+  <button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button></section>
+
+ <section><h2>Latihan 8 - Menu makanan</h2>
+  <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng - Rp5.000</label><br>
+  <label><input type="checkbox" class="menu" value="500"> Tempe - Rp500</label><br>
+  <label><input type="checkbox" class="menu" value="2500"> Telur Dadar - Rp2.500</label><br>
+  <label><input type="checkbox" class="menu" value="3000"> Tahu Bacem - Rp3.000</label><br>
+  <label><input type="checkbox" class="menu" value="4000"> Es Teh - Rp4.000</label><br>
+  <p>Total: Rp<span id="total">0</span></p></section>
+
+ <section class="wide"><h2>Mini Project - Kalkulator Nilai Mahasiswa</h2>
+  <div class="fields">
+   <label for="nama">Nama <input type="text" id="nama"></label>
+   <label for="tugas">Tugas <input type="number" id="tugas" min="0" max="100"></label>
+   <label for="uts">UTS <input type="number" id="uts" min="0" max="100"></label>
+   <label for="uas">UAS <input type="number" id="uas" min="0" max="100"></label>
+  </div>
+  <button type="button" id="btnHitung">Hitung</button>
+  <p id="hasilNilai" aria-live="polite"></p></section>
+
+ <section class="wide"><h2>Eksperimen - Tabel perkalian 7 dan tampil/sembunyi</h2>
+  <button type="button" id="btnToggle">Tampilkan / sembunyikan tabel</button>
+  <div id="tabelPerkalian"></div></section>
+
+ </main>
+
+ <script src="script.js"></script>
+</body>
+</html>
